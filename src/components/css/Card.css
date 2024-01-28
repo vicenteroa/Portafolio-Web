@@ -1,0 +1,56 @@
+.custom-card {
+    border: 1px solid #e0e0e0; /* Bordes de la tarjeta */
+    border-radius: 12px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que las imágenes sobresalgan */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease; /* Añade transición a la sombra */
+
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+  }
+  
+  .custom-card-img {
+    max-height: 240px; /* Altura máxima de la imagen */
+    width: 100%; /* Asegura que la imagen se ajuste al ancho de la tarjeta */
+    object-fit: cover; /* Evita que la imagen se deforme */
+  }
+  
+  .custom-card-content {
+    padding: 16px; /* Espaciado interno del contenido */
+  }
+  
+  .custom-card-title {
+    font-size: 1.5rem; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 8px; /* Espaciado inferior */
+    color: #000000;
+  }
+  
+  .custom-card-text {
+    color: #000000; /* Color del texto */
+    line-height: 1.1; /* Altura de línea */
+    font-size:  25px;
+  }
+  
+  .custom-card-link {
+
+    margin: 20px;
+    text-decoration: none;
+    background-color: #3498db; /* Color de fondo del enlace */
+    color: #fff; /* Color del texto del enlace */
+    padding: 9px 26px; /* Espaciado interno del enlace */
+    border-radius: 8px; /* Bordes redondeados */
+    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+    transition: background-color 0.3s ease; /* Añade transición al color de fondo */
+    position: relative;
+    left: 90px;
+  
+    /* Estilos al pasar el mouse sobre el enlace */
+    &:hover {
+      background-color: #2980b9; /* Cambia el color al hacer hover */
+    }
+  }
+  

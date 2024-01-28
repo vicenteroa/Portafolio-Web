@@ -1,0 +1,194 @@
+.card-container
+{
+  color: black;
+  position:absolute;
+  top: 280px;
+  font-size: 50px;
+  left: 30px;
+  border-radius: 20px;
+}
+
+.img-fot {
+  border-radius: 100px;
+  width: 325px;
+  position: absolute;
+  left: 1200px;
+  top: 1%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease; /* Agrega una transición suave para el efecto de zoom */
+}
+
+.img-fot:hover {
+  transform: scale(1.3); /* Ajusta el valor para controlar el nivel de zoom */
+  z-index: 1; /* Asegura que la imagen esté sobre otros elementos en el hover */
+}
+
+
+/* Sección principal */
+.section1 {
+  position: relative;
+  background-color: #f8f8f8; /* Fondo ligeramente gris */
+  border: 1px solid #dcdcdc; /* Borde de 1 píxel sólido en color gris */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Aumenta el relleno para mejorar el espacio interno */
+  top: 850px;
+}
+
+/* Encabezado dentro de la sección */
+.section1 h2 {
+  text-align: center;
+  padding: 15px 0; /* Añade espacio arriba y abajo para mejorar el diseño */
+  color: #333; /* Color del texto */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de fuente más moderna */
+  font-size: 24px; /* Tamaño del texto aumentado para destacar */
+}
+
+.card-container p{
+  font-size: 20px;
+}
+
+/* Estilo del texto dentro de .section1 */
+.section1 p {
+  color: #555; /* Color del texto ligeramente más oscuro que el fondo */
+  font-family: 'Arial', sans-serif; /* Mantén la fuente de respaldo */
+  font-size: 18px; /* Aumenta el tamaño del texto para una mejor legibilidad */
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
+  text-align: center;
+}
+
+/* Pseudo-clase hover para destacar la sección cuando el usuario pasa el ratón sobre ella */
+.section1:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil en el hover */
+  transition: box-shadow 0.3s ease; /* Agrega una transición suave para una mejor experiencia visual */
+}
+
+
+.section2 {
+  position: relative;
+  background-color: #f8f8f8; /* Fondo ligeramente gris */
+  border: 1px solid #dcdcdc; /* Borde de 1 píxel sólido en color gris */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Aumenta el relleno para mejorar el espacio interno */
+  top: 860px;
+}
+
+
+.section3 {
+  position: relative;
+  background-color: #f8f8f8; /* Fondo ligeramente gris */
+  border: 1px solid #dcdcdc; /* Borde de 1 píxel sólido en color gris */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Aumenta el relleno para mejorar el espacio interno */
+  top: 870px;
+}
+
+.section4
+{
+  display: flex;
+  gap: 20px;
+}
+.card
+{
+  position: relative;
+  top: 890px;
+  left: 200px;
+}
+
+
+.section5
+{
+  position: relative;
+  background-color: #f8f8f8; /* Fondo ligeramente gris */
+  border: 1px solid #dcdcdc; /* Borde de 1 píxel sólido en color gris */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Aumenta el relleno para mejorar el espacio interno */
+  top: 970px;
+
+}
+
+
+.text1
+{
+  color: #165aa1;
+}
+
+
+
+/*DISEÑO RESPONSIVE CELULAR*/
+
+
+
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    font-size: 50px;
+    left: 0;
+    top: 100px;
+    width: 100%; /* Hace que ocupe todo el ancho disponible */
+    margin: 0; /* Elimina cualquier margen que pueda estar afectando el ancho */
+    background-color: unset;
+  }
+
+  .img-fot
+  {
+    position: absolute;
+    left: 410px;
+  }
+
+  .card-container h1{
+    position: relative;
+    left: 387px;
+    top: 320px;
+  }
+
+  .text1
+  {
+    font-size: 70px;
+  }
+
+  .p-text
+  {
+    position: relative;
+    top: -900px;
+  }
+  
+
+  .section1 {
+    background-color: hsl(211, 76%, 36%, 0.9);
+    left: 605px;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 280vw; /* Cambiado a 100vw para ocupar todo el ancho de la pantalla */
+  }
+
+
+  .section1 h2 {
+    font-size: 80px;
+    color: white;
+  }
+
+  .section1 p {
+    font-size: 30px;
+    color: white;
+  }
+
+  .section2 {
+    background-color: hsla(0, 75%, 61%, 0.9);
+    left: 605px;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 280vw; /* Cambiado a 100vw para ocupar todo el ancho de la pantalla */
+  }
+
+  .section2 h2 {
+    color: white;
+    font-size: 80px;
+  }
+
+  .section2 p {
+    color: white;
+    font-size: 30px;
+  }
+
+
+}

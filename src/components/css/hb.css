@@ -1,0 +1,30 @@
+.img-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .img-cont-1,
+  .img-cont-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    padding: 40px;
+  }
+  
+  .img-cont img {
+    width: 90px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+  
+  /* Estos estilos son opcionales y pueden ajustarse según tus necesidades */
+  .img-cont-1 {
+    margin-bottom: 20px; /* Espaciado entre img-cont-1 y img-cont-2 */
+  }
+  
+  .img-cont-2 {
+    margin-bottom: 90px; /* Espaciado entre img-cont-2 y el logo de MongoDB */
+  }
+  
